@@ -4,6 +4,7 @@
   # See how all your routes lay out with "rake routes".
   resources :articles do
     resources :comments
+    resources :links
   end
 
   # get 'welcome/index'

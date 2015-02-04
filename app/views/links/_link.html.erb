@@ -7,3 +7,9 @@
   <strong>Link:</strong>
   <%= link.url %>
 </p>
+
+<p>
+  <%= link_to 'Destroy Link', [link.article, link],
+               method: :delete,
+               data: { confirm: 'Are you sure?' } %>
+</p>

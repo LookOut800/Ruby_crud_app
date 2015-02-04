@@ -24,10 +24,10 @@
 <%= render 'comments/form' %>
 
 <h2>Add a link:</h2>
+<%= @article.links.each do |link| %>
+<%= link_to "#{link.title}", link.url %>
 <%= render 'links/form' %>
-
-
-
+<%end%>
 <%= link_to 'Further Readings', edit_article_path(@article) %>
 <%= link_to 'Edit Article', edit_article_path(@article) %>
 <%= link_to 'Back to Articles', articles_path %>
